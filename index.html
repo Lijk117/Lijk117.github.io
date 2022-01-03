@@ -147,6 +147,14 @@
 <p>把这个配置完之后，还要去 github 上，把新旧域名进行绑定 —— 不是你随便建个网站，获取到别人的 ip 地址后，你就能够指引到别人家的，不行。</p>
 <p>在 github 上找到自己的博客文件位置，点进去找到 “settings” - “Pages” - “Custom domain”，把自己的域名放上去，save，过一会儿就同步成功了。</p>
 <p><img src="media/16411331701543/16411360517371.jpg"></p>
+<p>在本地创建个文件，命名为 CHAME 注意全是大写。<br>CHAME 里面放自己的域名，然后保存在 source 文件夹里。</p>
+<p>在 _config.yml 上加一条：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Plugins: hexo-generator-cname </span><br></pre></td></tr></table></figure>
+
+<p>然后代码执行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-cname --save</span><br></pre></td></tr></table></figure>
+<p>如果报错就重新执行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-generator-cname --save</span><br><span class="line"></span><br><span class="line">npm install hexo-generator-cname --save</span><br></pre></td></tr></table></figure>
 
       
     </div>
