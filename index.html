@@ -73,6 +73,48 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-体验用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/09/%E4%BD%93%E9%AA%8C%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2022-01-09T06:14:47.303Z" itemprop="datePublished">2022-01-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>举例</p>
+<ul>
+<li>例子 1</li>
+<li>例子2</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/H8-aIEb_v0SBwfWvWDbPsA">北京大学的微信公众号</a></p>
+<p>引用</p>
+<blockquote>
+<p>知识改变命运</p>
+</blockquote>
+<p>重<strong>点来</strong>了</p>
+<p><em>行动爱晒</em></p>
+<p>上传到我的博客</p>
+<p><a target="_blank" rel="noopener" href="https://donate.cafe/ljkjl">  <img style="width:150px" src="https://newbie.zeromesh.net/donate.7.6.svg" /></a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ljk.cool/2022/01/09/%E4%BD%93%E9%AA%8C%E7%94%A8/" data-id="cky6vk28x0000yhfy07srg65w" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-使用 gitbook 写你的电子书" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/01/08/%E4%BD%BF%E7%94%A8%20gitbook%20%E5%86%99%E4%BD%A0%E7%9A%84%E7%94%B5%E5%AD%90%E4%B9%A6/" class="article-date">
@@ -608,74 +650,12 @@
 
 
   
-    <article id="post-git 配置 github ssh" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/01/git%20%E9%85%8D%E7%BD%AE%20github%20ssh/" class="article-date">
-  <time class="dt-published" datetime="2021-12-31T17:04:01.038Z" itemprop="datePublished">2022-01-01</time>
-</a>
+
+
+  <nav id="page-nav">
     
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="git-配置-github-ssh"><a href="#git-配置-github-ssh" class="headerlink" title="git 配置 github ssh"></a>git 配置 github ssh</h2><p>1、设置Git的user name和email：(如果是第一次的话)<br>    $ git config –global user.name “ljk”<br>    $ git config –global user.email”<a href="mailto:&#x31;&#x33;&#x32;&#x30;&#55;&#53;&#52;&#x30;&#x30;&#48;&#55;&#64;&#49;&#x32;&#x36;&#46;&#99;&#111;&#x6d;">&#x31;&#x33;&#x32;&#x30;&#55;&#53;&#52;&#x30;&#x30;&#48;&#55;&#64;&#49;&#x32;&#x36;&#46;&#99;&#111;&#x6d;</a>“<br>2、生成密钥<br>    $ ssh-keygen -t rsa -C “<a href="mailto:&#x31;&#51;&#50;&#48;&#55;&#x35;&#x34;&#48;&#48;&#48;&#x37;&#x40;&#x31;&#x32;&#54;&#x2e;&#x63;&#x6f;&#109;">&#x31;&#51;&#50;&#48;&#55;&#x35;&#x34;&#48;&#48;&#48;&#x37;&#x40;&#x31;&#x32;&#54;&#x2e;&#x63;&#x6f;&#109;</a>“<br>连续3个回车。如果不需要密码的话。<br>最后得到了两个文件：id_rsa和id_rsa.pub。</p>
-<p>图片描述</p>
-<p>如果不是第一次，就选择overwrite.<br>图片描述</p>
-<p>3、添加密钥到ssh-agent<br>确保 ssh-agent 是可用的。ssh-agent是一种控制用来保存公钥身份验证所使用的私钥的程序，其实ssh-agent就是一个密钥管理器，运行ssh-agent以后，使用ssh-add将私钥交给ssh-agent保管，其他程序需要身份验证的时候可以将验证申请交给ssh-agent来完成整个认证过程。</p>
-<pre><code># start the ssh-agent in the background
-eval &quot;$(ssh-agent -s)&quot;
-Agent pid 59566
-</code></pre>
-<p>添加生成的 SSH key 到 ssh-agent。</p>
-<pre><code>$ ssh-add ~/.ssh/id_rsa
-</code></pre>
-<p>图片描述</p>
-<p>4、登陆Github, 添加 ssh 。<br>把id_rsa.pub文件里的内容复制到这里</p>
-<p>图片描述</p>
-<p>图片描述</p>
-<p>图片描述</p>
-<p>图片描述</p>
-<p>图片描述</p>
-<p>5、测试：<br>    $ ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#103;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;</a><br>你将会看到：</p>
-<pre><code>The authenticity of host &#39;github.com (207.97.227.239)&#39; can&#39;t be established.
-RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
-Are you sure you want to continue connecting (yes/no)?
-</code></pre>
-<p>选择 yes</p>
-<pre><code>Hi humingx! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
-</code></pre>
-<p>如果看到Hi后面是你的用户名，就说明成功了。<br>图片描述</p>
-<p>6、修改.git文件夹下config中的url。<br>修改前</p>
-<pre><code>[remote &quot;origin&quot;]
-url = https://github.com/humingx/humingx.github.io.git
-fetch = +refs/heads/*:refs/remotes/origin/*
-</code></pre>
-<p>修改后</p>
-<pre><code>[remote &quot;origin&quot;]
-url = git@github.com:humingx/humingx.github.io.git
-fetch = +refs/heads/*:refs/remotes/origin/*
-</code></pre>
-<p>7、发布<br>图片描述</p>
-<p><a target="_blank" rel="noopener" href="https://donate.cafe/ljkjl">  <img style="width:150px" src="https://newbie.zeromesh.net/donate.7.6.svg" /></a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ljk.cool/2022/01/01/git%20%E9%85%8D%E7%BD%AE%20github%20ssh/" data-id="ckxuypfrv0000ksfybf3fh577" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
 
 </section>
         
@@ -706,6 +686,10 @@ fetch = +refs/heads/*:refs/remotes/origin/*
       <ul>
         
           <li>
+            <a href="/2022/01/09/%E4%BD%93%E9%AA%8C%E7%94%A8/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2022/01/08/%E4%BD%BF%E7%94%A8%20gitbook%20%E5%86%99%E4%BD%A0%E7%9A%84%E7%94%B5%E5%AD%90%E4%B9%A6/">使用 Gitbook 写你的电子书</a>
           </li>
         
@@ -719,10 +703,6 @@ fetch = +refs/heads/*:refs/remotes/origin/*
         
           <li>
             <a href="/2022/01/05/Typora%20%E7%BB%91%E5%AE%9A%E5%9B%BE%E5%BA%8A/">Typora 绑定图床</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/04/%E6%80%8E%E6%A0%B7%E6%B3%A8%E5%86%8C%E7%BE%8E%E5%8C%BA%20Paypal%20%E8%B4%A6%E5%8F%B7/">怎样注册美区 Paypal 账号</a>
           </li>
         
       </ul>
