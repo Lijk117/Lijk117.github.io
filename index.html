@@ -73,9 +73,9 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-md简易教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-Markdown简易教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/01/10/md%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/" class="article-date">
+    <a href="/2022/01/10/Markdown%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/" class="article-date">
   <time class="dt-published" datetime="2022-01-10T07:16:11.857Z" itemprop="datePublished">2022-01-10</time>
 </a>
     
@@ -83,41 +83,122 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/01/10/Markdown%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/">Markdown 简易教程</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="基础用法"><a href="#基础用法" class="headerlink" title="基础用法"></a>基础用法</h2><p>举例</p>
-<p>无序”*” “-“</p>
-<ul>
-<li>例子一</li>
-<li>例子二</li>
-</ul>
-<ul>
-<li>例子三</li>
-</ul>
-<p>有序”1.”</p>
-<ol>
-<li>例子1</li>
-<li>例子2</li>
-</ol>
-<p><img src="https://cdn.ljk.cool/202201101516810.png" alt="5.5-1"></p>
-<p>引用 “&gt;”</p>
-<blockquote>
-<p>稳定、安全、长期</p>
-</blockquote>
-<p>重点来了，划重点“****”</p>
-<p><strong>重点内容在这里</strong></p>
-<p>斜体“**”</p>
-<p><em>字就斜着了</em></p>
-<p>“—”</p>
-<hr>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>英文的<a href=""></a></p>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/191d1e21f7ed">markdown 讲解</a></p>
-<p><del>深处</del></p>
+        <p>Markdown 是一个有效简化排版的工具，如果你的排版需求不是特别重，Markdown 是你的最佳选择，如果你对排版的要求极高，Markdown 可能无法满足你的需求。</p>
+<p>如果你想让你的文章有比较规整的排版，但又不想花哪怕一分钟在排版上，学 Markdown 吧，只需要做一点点标注，它就能帮你实现一个规整的排版。</p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p><a target="_blank" rel="noopener" href="https://markdown.lovejade.cn/">在线 Markdown 编辑器</a> : 把左边的文字删掉换成自己的文章内容就可以看到右边的实时编译内容。</p>
+<p><a target="_blank" rel="noopener" href="https://typora.io/">Typora</a> : 目前这个产品算是最好的客户端产品，费用是 88 块钱永久，可以给三个电脑激活，并且有 15 天免费试用，买它不亏。</p>
+<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/download">Vscode</a> : 这个工具既可以写 Markdown，也可以敲代码，还免费，也很好。</p>
+<p>手机端可以用锤子便签。</p>
+<p>其实记事本都可以写 Markdown，只是需要个工具来把文本编译好。</p>
+<p>目前主流的笔记软件比如有道笔记、印象笔记都是支持 Markdown 语句的。</p>
+<p><a target="_blank" rel="noopener" href="https://www.mweb.im/">Mweb</a> : 这个只在 mac 和 ios 系统上有，是我自己也在用的。</p>
+<p><a target="_blank" rel="noopener" href="https://ulysses.app/">Ulysses</a> : 号称是最好用的写作工具，要年付费，我买不起，所以没使用。</p>
+<h2 id="Markdown-基础用法"><a href="#Markdown-基础用法" class="headerlink" title="Markdown 基础用法"></a>Markdown 基础用法</h2><p>简单来说，Markdown 的语法主要是使用 “#”, “*”, “-”, “&gt;”, “`” 等小的字符作为指令，要注意的是，这些指令都要用英文状态下的“半角标点符号”，不能使用中文下的全角符号，部分语法需要加空格</p>
+<p>所谓“指令”，当你在编辑器内输入<code># 我是谁</code>的时候，就相当于你告诉机器“我是谁”是你文章的标题。</p>
+<table>
+<thead>
+<tr>
+<th align="center">功能</th>
+<th align="center">语法</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">一级标题</td>
+<td align="center"># 内容</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">二级标题</td>
+<td align="center">## 内容</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">斜体</td>
+<td align="center">*内容*</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">加粗</td>
+<td align="center">*<em>内容</em>*</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">分割线</td>
+<td align="center">—</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">举例（无序1）</td>
+<td align="center">*</td>
+<td align="center">分级的话可以使用“tab键”缩进</td>
+</tr>
+<tr>
+<td align="center">举例（无序2）</td>
+<td align="center">-</td>
+<td align="center">分级的话可以使用“tab键”缩进</td>
+</tr>
+<tr>
+<td align="center">举例（有序）</td>
+<td align="center">1. 内容</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">引用</td>
+<td align="center">&gt; 内容</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">删除线</td>
+<td align="center">~~内容~~</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">插入链接</td>
+<td align="center">[内容](链接)</td>
+<td align="center">点击后可以跳转到对应链接</td>
+</tr>
+<tr>
+<td align="center">插入图片</td>
+<td align="center">![内容](链接)</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">插入符号</td>
+<td align="center">\符号</td>
+<td align="center">比如我真想输入“*”，可能会被转义，需要使用“\”来处理</td>
+</tr>
+<tr>
+<td align="center">代码</td>
+<td align="center">`内容`</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">代办事项</td>
+<td align="center">- [ ]</td>
+<td align="center">“]”后面有个空格</td>
+</tr>
+</tbody></table>
+<p>下面举了个例子作为参考</p>
+<p><img src="https://cdn.ljk.cool/202201101849520.png" alt="语法（左）及显示效果（右）"></p>
+<p><a target="_blank" rel="noopener" href="https://donate.cafe/ljkjl">  <img style="width:150px" src="https://newbie.zeromesh.net/donate.7.6.svg" /></a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ljk.cool/2022/01/10/md%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/" data-id="cky8cs0j600005ofy00ba1edb" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://ljk.cool/2022/01/10/Markdown%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/" data-id="cky8o5wg20000k8fy0yeh90l6" data-title="Markdown 简易教程" class="article-share-link">Share</a>
       
       
       
@@ -713,7 +794,7 @@
       <ul>
         
           <li>
-            <a href="/2022/01/10/md%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/">(no title)</a>
+            <a href="/2022/01/10/Markdown%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/">Markdown 简易教程</a>
           </li>
         
           <li>
