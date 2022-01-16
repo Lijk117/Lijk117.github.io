@@ -73,6 +73,60 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-配置图床在“https”上的坑" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/06/%E9%85%8D%E7%BD%AE%E5%9B%BE%E5%BA%8A%E5%9C%A8%E2%80%9Chttps%E2%80%9D%E4%B8%8A%E7%9A%84%E5%9D%91/" class="article-date">
+  <time class="dt-published" datetime="2022-01-06T13:57:36.487Z" itemprop="datePublished">2022-01-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/01/06/%E9%85%8D%E7%BD%AE%E5%9B%BE%E5%BA%8A%E5%9C%A8%E2%80%9Chttps%E2%80%9D%E4%B8%8A%E7%9A%84%E5%9D%91/">配置图床在“https”上的坑</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>之前选择七牛云作为对象存储是因为它每个月送 10G 的存储空间，这对目前的我来说可太够用了，我看了一下数据，我现在只用了 30M，差得远。</p>
+<p>但最近的配置发现自己明明把图床都配置好了，为啥到了博客上就显示不了呢？</p>
+<p>原来，我的博客是 https 的域名，而免费的七牛云用的是 http，https 内的内容是无法访问 http 内容的，所以失败，解决办法也容易 —— 让自己的图片使用 https 访问。</p>
+<p>https 除了要花钱，没缺点，于是我去配置了一下，其实也非常简单：</p>
+<p>就是在https 配置那里，选择使用免费证书配置后，点击确认就好了。</p>
+<p><img src="https://cdn.ljk.cool/%E9%85%8D%E7%BD%AEhttps.png" alt="image-20220106214822262"></p>
+<p>配置完成后记得去七牛图床设置里把访问网址改成 https</p>
+<p>显示效果如下图：</p>
+<p><img src="https://cdn.ljk.cool/%E8%B0%83%E6%95%B4%E8%AE%BE%E7%BD%AE%E6%95%88%E6%9E%9C.png" alt="image-20220106215006552"></p>
+<p>美中不足的地方就是这个图片名字，现在我在上传视频的时候会特别修改一下名字，后面我要学习一下如何不展示这个图片名字，届时会再发教程。</p>
+<p>设置方法是在 picgo 上把「上传前重命名」打开</p>
+<p><img src="https://cdn.ljk.cool/%E9%87%8D%E5%91%BD%E5%90%8Dpng" alt="其实不用"></p>
+<p>但是吧我觉得多此一举，等我测试完了再说，因为我发现另外一个事情：</p>
+<p>我感觉把这个改了就行，等上传之后看看效果，明天再更新一下</p>
+<p><img src="https://cdn.ljk.cool/202201062156287.png" alt="image-20220106215653255"></p>
+<p><a target="_blank" rel="noopener" href="https://donate.cafe/ljkjl">  <img style="width:150px" src="https://newbie.zeromesh.net/donate.7.6.svg" /></a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ljk.cool/2022/01/06/%E9%85%8D%E7%BD%AE%E5%9B%BE%E5%BA%8A%E5%9C%A8%E2%80%9Chttps%E2%80%9D%E4%B8%8A%E7%9A%84%E5%9D%91/" data-id="cky31b80w00002ffyccy9gg1n" data-title="配置图床在“https”上的坑" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Typora 绑定图床" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/01/05/Typora%20%E7%BB%91%E5%AE%9A%E5%9B%BE%E5%BA%8A/" class="article-date">
@@ -529,6 +583,10 @@ fetch = +refs/heads/*:refs/remotes/origin/*
       <ul>
         
           <li>
+            <a href="/2022/01/16/GitHub%20%E6%B3%A8%E5%86%8C/">GitHub 注册</a>
+          </li>
+        
+          <li>
             <a href="/2022/01/15/Figma%20%E5%AD%A6%E4%B9%A0%201/">Figma 学习</a>
           </li>
         
@@ -542,10 +600,6 @@ fetch = +refs/heads/*:refs/remotes/origin/*
         
           <li>
             <a href="/2022/01/12/Markdown%20%E6%8E%92%E7%89%88%E8%A7%84%E8%8C%83/">Markdown 排版规范</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/11/%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7%E8%A7%84%E8%8C%83%E5%AD%A6%E4%B9%A0/">标点符号规范学习</a>
           </li>
         
       </ul>
