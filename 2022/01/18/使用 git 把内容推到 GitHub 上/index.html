@@ -4,21 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Figma 学习 | 简洁的废话</title>
+  <title>使用 git 把内容推到 GitHub 上 | 简洁的废话</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="以后要学习使用 Figma 来画原型图，今天找了教程下载了 Figma： 下载汉化版用 https:&#x2F;&#x2F;www.figma.cool&#x2F;  这个网站，但是一般来说 mac 打不开，还需要在终端去运行一行代码： 1sudo xattr -rd com.apple.quarantine &#x2F;Applications&#x2F;Figma.app    要是说显示下面的提示，就把 Figma 汉化版修改为「Figma">
+  <meta name="description" content="先在github或者码云上创建一个公开或私有项目：例如demo 在本地也就是要推送的项目目录中使用 git init 进行初始化，把其变成git可以管理的仓库  1git init   若要忽略本地的文件或文件夹不被提交到git远程仓库 ，则需要在项目根目录下创建 .gitignore 文件touch .gitignore  打开文件，编辑内容，写如要忽略的文件，例如：.idea # pytho">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Figma 学习">
-<meta property="og:url" content="http://ljk.cool/2022/01/15/Figma%20%E5%AD%A6%E4%B9%A0%201/index.html">
+<meta property="og:title" content="使用 git 把内容推到 GitHub 上">
+<meta property="og:url" content="http://ljk.cool/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/index.html">
 <meta property="og:site_name" content="简洁的废话">
-<meta property="og:description" content="以后要学习使用 Figma 来画原型图，今天找了教程下载了 Figma： 下载汉化版用 https:&#x2F;&#x2F;www.figma.cool&#x2F;  这个网站，但是一般来说 mac 打不开，还需要在终端去运行一行代码： 1sudo xattr -rd com.apple.quarantine &#x2F;Applications&#x2F;Figma.app    要是说显示下面的提示，就把 Figma 汉化版修改为「Figma">
+<meta property="og:description" content="先在github或者码云上创建一个公开或私有项目：例如demo 在本地也就是要推送的项目目录中使用 git init 进行初始化，把其变成git可以管理的仓库  1git init   若要忽略本地的文件或文件夹不被提交到git远程仓库 ，则需要在项目根目录下创建 .gitignore 文件touch .gitignore  打开文件，编辑内容，写如要忽略的文件，例如：.idea # pytho">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cdn.ljk.cool/202201152219539.png">
-<meta property="article:published_time" content="2022-01-15T13:58:22.942Z">
-<meta property="article:modified_time" content="2022-01-15T14:25:22.953Z">
+<meta property="article:published_time" content="2022-01-18T14:45:18.137Z">
+<meta property="article:modified_time" content="2022-01-18T14:47:23.506Z">
 <meta property="article:author" content="ljk">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.ljk.cool/202201152219539.png">
   
     <link rel="alternate" href="/atom.xml" title="简洁的废话" type="application/atom+xml">
   
@@ -75,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-Figma 学习 1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-使用 git 把内容推到 GitHub 上" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/01/15/Figma%20%E5%AD%A6%E4%B9%A0%201/" class="article-date">
-  <time class="dt-published" datetime="2022-01-15T13:58:22.942Z" itemprop="datePublished">2022-01-15</time>
+    <a href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/" class="article-date">
+  <time class="dt-published" datetime="2022-01-18T14:45:18.137Z" itemprop="datePublished">2022-01-18</time>
 </a>
     
   </div>
@@ -89,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Figma 学习
+      使用 git 把内容推到 GitHub 上
     </h1>
   
 
@@ -97,20 +95,35 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>以后要学习使用 Figma 来画原型图，今天找了教程下载了 Figma：</p>
-<p>下载汉化版用 <a target="_blank" rel="noopener" href="https://www.figma.cool/">https://www.figma.cool/</a>  这个网站，但是一般来说 mac 打不开，还需要在终端去运行一行代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo xattr -rd com.apple.quarantine /Applications/Figma.app</span><br></pre></td></tr></table></figure>
+        <ol>
+<li>先在github或者码云上创建一个公开或私有项目：例如demo</li>
+<li>在本地也就是要推送的项目目录中使用 git init 进行初始化，把其变成git可以管理的仓库</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
 
-
-
-<p>要是说显示下面的提示，就把 Figma 汉化版修改为「Figma」就可以了</p>
-<p><img src="https://cdn.ljk.cool/202201152219539.png" alt="错误提示"></p>
-<p>除了这个外，还需要安装 Figma EX，这个我还没研究出来，装不好，下回分解。</p>
+<ol start="3">
+<li><p>若要忽略本地的文件或文件夹不被提交到git远程仓库 ，则需要在项目根目录下创建 .gitignore 文件<br>touch .gitignore</p>
+</li>
+<li><p>打开文件，编辑内容，写如要忽略的文件，例如：<br>.idea # python中的一个隐藏文件，自动生成的，不需要提交<br>*.py[cod] #一些没有用的附带文件，直接忽略即可<br>按照上诉操作后，保存，那么这些文件就不会被提交了。</p>
+</li>
+<li><p>将文件夹下所有文件从工作区保存到暂存区 git add .命令<br>git add .</p>
+</li>
+<li><p>把文件从暂存区提交到仓库区（本地的仓库） git-commit -m “此处写注释内容”<br>git commit -m ‘注释内容’</p>
+</li>
+<li><p>关联远程仓库 （第一次使用需要添加远程仓库的地址）<br>git remote add origin git@git仓库的地址<br>#注意，此处的地址将https://省略<br>注意，此处的地址将https://省略</p>
+</li>
+</ol>
+<p>或者</p>
+<p>git remote add origin 你git仓库的地址</p>
+<ol start="7">
+<li>将远程库与本地同步（如果远程仓库里面有文件等内容需要执行以下这一步）<br>git pull –rebase origin master</li>
+<li>把本地内容推送到远程库 使用 git-push<br>git push -u origin master<br>按照上面的操作步骤就可以将本地文件推送到git远程仓库上了，并且可以自己设定不需要上传哪些文件。当然，情况因每人的配置环境或多或少出现问题，此教程只是解决众多问题中其中一个。</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ljk.cool/2022/01/15/Figma%20%E5%AD%A6%E4%B9%A0%201/" data-id="ckyfx963d0000w3fy9mlje0jx" data-title="Figma 学习" class="article-share-link">Share</a>
+      <a data-url="http://ljk.cool/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/" data-id="ckyk8tdmo0001ppfyav31h0ax" data-title="使用 git 把内容推到 GitHub 上" class="article-share-link">Share</a>
       
       
       
@@ -120,19 +133,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2022/01/16/GitHub%20%E6%B3%A8%E5%86%8C/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          GitHub 注册
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/01/14/Gitbook%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2022/01/17/Mac%20%E7%8E%AF%E5%A2%83%E4%B8%8B%20Gitbook%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">GitBook 绑定域名</div>
+      <div class="article-nav-title">Mac 环境下 GitBook 安装教程</div>
     </a>
   
 </nav>

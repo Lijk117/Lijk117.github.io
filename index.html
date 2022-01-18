@@ -73,6 +73,122 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-使用 git 把内容推到 GitHub 上" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/" class="article-date">
+  <time class="dt-published" datetime="2022-01-18T14:45:18.137Z" itemprop="datePublished">2022-01-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/">使用 git 把内容推到 GitHub 上</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>先在github或者码云上创建一个公开或私有项目：例如demo</li>
+<li>在本地也就是要推送的项目目录中使用 git init 进行初始化，把其变成git可以管理的仓库</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>若要忽略本地的文件或文件夹不被提交到git远程仓库 ，则需要在项目根目录下创建 .gitignore 文件<br>touch .gitignore</p>
+</li>
+<li><p>打开文件，编辑内容，写如要忽略的文件，例如：<br>.idea # python中的一个隐藏文件，自动生成的，不需要提交<br>*.py[cod] #一些没有用的附带文件，直接忽略即可<br>按照上诉操作后，保存，那么这些文件就不会被提交了。</p>
+</li>
+<li><p>将文件夹下所有文件从工作区保存到暂存区 git add .命令<br>git add .</p>
+</li>
+<li><p>把文件从暂存区提交到仓库区（本地的仓库） git-commit -m “此处写注释内容”<br>git commit -m ‘注释内容’</p>
+</li>
+<li><p>关联远程仓库 （第一次使用需要添加远程仓库的地址）<br>git remote add origin git@git仓库的地址<br>#注意，此处的地址将https://省略<br>注意，此处的地址将https://省略</p>
+</li>
+</ol>
+<p>或者</p>
+<p>git remote add origin 你git仓库的地址</p>
+<ol start="7">
+<li>将远程库与本地同步（如果远程仓库里面有文件等内容需要执行以下这一步）<br>git pull –rebase origin master</li>
+<li>把本地内容推送到远程库 使用 git-push<br>git push -u origin master<br>按照上面的操作步骤就可以将本地文件推送到git远程仓库上了，并且可以自己设定不需要上传哪些文件。当然，情况因每人的配置环境或多或少出现问题，此教程只是解决众多问题中其中一个。</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ljk.cool/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/" data-id="ckyk8tdmo0001ppfyav31h0ax" data-title="使用 git 把内容推到 GitHub 上" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Mac 环境下 Gitbook 安装教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/17/Mac%20%E7%8E%AF%E5%A2%83%E4%B8%8B%20Gitbook%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2022-01-17T15:28:01.831Z" itemprop="datePublished">2022-01-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/01/17/Mac%20%E7%8E%AF%E5%A2%83%E4%B8%8B%20Gitbook%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">Mac 环境下 GitBook 安装教程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="安装-node-js"><a href="#安装-node-js" class="headerlink" title="安装 node.js"></a>安装 node.js</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/">下载链接</a></p>
+<p>一般选左边的就行，左边是用的最多的稳定版，右边是当前最新版，不急，用稳定版足够</p>
+<p><img src="https://cdn.ljk.cool/202201172331693.png" alt="下载选项"></p>
+<p>下载完成后打开就继续继续继续就好了</p>
+<p><img src="https://cdn.ljk.cool/202201172332412.png" alt="继续"></p>
+<p>安装完成后，在【终端】页面，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<p>查看版本</p>
+<p><img src="https://cdn.ljk.cool/202201172334916.png" alt="版本"></p>
+<p>下一步就是安装 GitBook</p>
+<p>在这里敲下一行代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install gitbook-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>需要输入你的开机密码，系统会自动安装，安装完成之后输入 <code>gitbook -V</code> 来查看 GitBook 版本，注意，这里的【V】是大写。</p>
+<p>查询完成后，退出用 <code>control</code>+ <code>C</code> .</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ljk.cool/2022/01/17/Mac%20%E7%8E%AF%E5%A2%83%E4%B8%8B%20Gitbook%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" data-id="ckyk8tdml0000ppfy4usgc9p2" data-title="Mac 环境下 GitBook 安装教程" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-关于网络问题的事先说明" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/01/17/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E7%9A%84%E4%BA%8B%E5%85%88%E8%AF%B4%E6%98%8E/" class="article-date">
@@ -705,133 +821,11 @@
 
 
   
-    <article id="post-成功的人觉得成功理所应当，普通人总在异想天开" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/09/%E6%88%90%E5%8A%9F%E7%9A%84%E4%BA%BA%E8%A7%89%E5%BE%97%E6%88%90%E5%8A%9F%E7%90%86%E6%89%80%E5%BA%94%E5%BD%93%EF%BC%8C%E6%99%AE%E9%80%9A%E4%BA%BA%E6%80%BB%E5%9C%A8%E5%BC%82%E6%83%B3%E5%A4%A9%E5%BC%80/" class="article-date">
-  <time class="dt-published" datetime="2022-01-09T06:14:47.303Z" itemprop="datePublished">2022-01-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/09/%E6%88%90%E5%8A%9F%E7%9A%84%E4%BA%BA%E8%A7%89%E5%BE%97%E6%88%90%E5%8A%9F%E7%90%86%E6%89%80%E5%BA%94%E5%BD%93%EF%BC%8C%E6%99%AE%E9%80%9A%E4%BA%BA%E6%80%BB%E5%9C%A8%E5%BC%82%E6%83%B3%E5%A4%A9%E5%BC%80/">成功的人觉得成功理所应当，普通人总在异想天开</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>今天跟一个成功转行的人聊天，发现能够转行需要具备以下几点：</p>
-<ul>
-<li>勇气/决心</li>
-<li>强大的学习能力</li>
-<li>机缘巧合 </li>
-</ul>
-<p>改变是非常痛苦的，人们天生不愿意改变并且还会为自己的不改变找到很多合理的理由。</p>
-<p>普通人就有意思了，动不动就渴望成功，可怎样能达到成功的结果？从来不多想这一步，日复一日碌碌无为是没有结果的呀。</p>
-<p>有了要改变的勇气，也需要强大的学习能力来支撑，毕竟转行从来不是一个容易的事情，甚至不能靠“兴趣”来为爱发电，因为作为一个局外人是不知道里面的困难的，所以一方面要快速大量做功课，尽快掌握尽可能多的信息，即便转行过去，也需要竖起耳朵获取消化信息，毕竟没人会因为你是转行过来的就把你当新人优待。</p>
-<p>前面两点是前提，第三点的出现让转行成为可能，同样重要，但光有机会没有以上两点也是没用的，因为积累也非常重要。</p>
-<hr>
-<p>这算是方法论吗？其实通过“以终为始”的思维方式去反推，也能推测出当前要做的事情，但这个看上去简单易推导的事情，也会有人不知道，其实也挺可悲，不过也要尊重每个人的选择。</p>
-<p>有念头了就去做，别等到万事俱备了再怎样，要珍惜这个过程而非只关注结果，享受每一个当下吧。</p>
-<p><a target="_blank" rel="noopener" href="https://donate.cafe/ljkjl">  <img style="width:150px" src="https://newbie.zeromesh.net/donate.7.6.svg" /></a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ljk.cool/2022/01/09/%E6%88%90%E5%8A%9F%E7%9A%84%E4%BA%BA%E8%A7%89%E5%BE%97%E6%88%90%E5%8A%9F%E7%90%86%E6%89%80%E5%BA%94%E5%BD%93%EF%BC%8C%E6%99%AE%E9%80%9A%E4%BA%BA%E6%80%BB%E5%9C%A8%E5%BC%82%E6%83%B3%E5%A4%A9%E5%BC%80/" data-id="cky7ff1ky0001odfy4gt18q4x" data-title="成功的人觉得成功理所应当，普通人总在异想天开" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-使用 gitbook 写你的电子书" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/08/%E4%BD%BF%E7%94%A8%20gitbook%20%E5%86%99%E4%BD%A0%E7%9A%84%E7%94%B5%E5%AD%90%E4%B9%A6/" class="article-date">
-  <time class="dt-published" datetime="2022-01-08T12:07:30.304Z" itemprop="datePublished">2022-01-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/08/%E4%BD%BF%E7%94%A8%20gitbook%20%E5%86%99%E4%BD%A0%E7%9A%84%E7%94%B5%E5%AD%90%E4%B9%A6/">使用 Gitbook 写你的电子书</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p><strong>别怕！一点都不难，不需要敲一行代码，只是一个简单的注册以及操作指引</strong></p>
-<blockquote>
-<p>特别说明：</p>
-<p>由于你要注册的这些网站国外网站，所以国内打开速度可能会比较慢一些，如果有条件的话尽量通过代理（VPN）进行注册，网络会快很多；</p>
-<p>如果无法使用代理，建议用系统自带的浏览器，Windows  用户就用 Edge 浏览器，mac 用户用 Safari，必要时可能用手机/平板注册会好一些。</p>
-</blockquote>
-<p><img src="https://cdn.ljk.cool/202201082016921.png" alt="注册"></p>
-<p><img src="https://cdn.ljk.cool/202201162157432.png" alt="邮箱确认"></p>
-<p><img src="https://cdn.ljk.cool/202201082027043.png" alt="邮箱确认"></p>
-<p>注册私人账户</p>
-<p><img src="https://cdn.ljk.cool/202201082052996.png" alt="私人使用"></p>
-<p>下面这个不重要，随便选或者不选都行</p>
-<p><img src="https://cdn.ljk.cool/202201082053269.png" alt="可选可不选"></p>
-<p>创建之后，可以写章节名字</p>
-<p><img src="https://cdn.ljk.cool/202201082056885.png" alt="创建章节&amp;内容"></p>
-<p>拖动移动，就可以转移到不同章节</p>
-<p><img src="https://cdn.ljk.cool/202201082057159.png" alt="拖动"></p>
-<p>文章写完之后，点击 「Publish」，这是「发布」的意思</p>
-<p><img src="https://cdn.ljk.cool/202201082058122.png" alt="Publish"></p>
-<p>点击发布之后，要先做账户认证</p>
-<p><img src="https://cdn.ljk.cool/202201082100365.png" alt="账户认证"></p>
-<p>这里简单来说就是你得绑定两种登陆方式，绑定完成之后，可以点击「Public」，就可以公开发表了</p>
-<p><img src="https://cdn.ljk.cool/202201082105535.png" alt="发布公开"></p>
-<p>点个确认就完成了，下面这个链接就是你书籍的网址，之后你可以随时修改自己的书籍内容</p>
-<p><img src="https://cdn.ljk.cool/202201082106825.png" alt="网址"></p>
-<p>笑来老师的《新生 - 七年就是一辈子》就是通过 Gitbook 发布的</p>
-<p><a target="_blank" rel="noopener" href="https://b.xinshengdaxue.com/index.html">https://b.xinshengdaxue.com/index.html</a></p>
-<p>后面点这个 「edit」就行了</p>
-<hr>
-<p>其它要说的地方：你需要有一个谷歌的账户，注册需要翻墙，要想想办法，</p>
-<p>也可以使用 github 注册，这些产品注册唯一的困难其实就是英语，可以找一些可以翻译的浏览器来处理，后面也会再写教程。</p>
-<p><a target="_blank" rel="noopener" href="https://donate.cafe/ljkjl">  <img style="width:150px" src="https://newbie.zeromesh.net/donate.7.6.svg" /></a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ljk.cool/2022/01/08/%E4%BD%BF%E7%94%A8%20gitbook%20%E5%86%99%E4%BD%A0%E7%9A%84%E7%94%B5%E5%AD%90%E4%B9%A6/" data-id="cky5vbqfw0000g8fy44xj6gp3" data-title="使用 Gitbook 写你的电子书" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
   </nav>
 
 </section>
@@ -863,6 +857,14 @@
       <ul>
         
           <li>
+            <a href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/">使用 git 把内容推到 GitHub 上</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/17/Mac%20%E7%8E%AF%E5%A2%83%E4%B8%8B%20Gitbook%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">Mac 环境下 GitBook 安装教程</a>
+          </li>
+        
+          <li>
             <a href="/2022/01/17/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E7%9A%84%E4%BA%8B%E5%85%88%E8%AF%B4%E6%98%8E/">关于网络问题的事先说明</a>
           </li>
         
@@ -872,14 +874,6 @@
         
           <li>
             <a href="/2022/01/15/Figma%20%E5%AD%A6%E4%B9%A0%201/">Figma 学习</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/14/Gitbook%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/">GitBook 绑定域名</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/13/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%81%9A%EF%BC%8C%E6%80%8E%E4%B9%88%E5%81%9A/">为什么做，怎么做</a>
           </li>
         
       </ul>
