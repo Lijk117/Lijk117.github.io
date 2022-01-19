@@ -73,6 +73,76 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-加速国内GitHub访问" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/19/%E5%8A%A0%E9%80%9F%E5%9B%BD%E5%86%85GitHub%E8%AE%BF%E9%97%AE/" class="article-date">
+  <time class="dt-published" datetime="2022-01-19T14:37:44.732Z" itemprop="datePublished">2022-01-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/01/19/%E5%8A%A0%E9%80%9F%E5%9B%BD%E5%86%85GitHub%E8%AE%BF%E9%97%AE/">加速国内 GitHub/GitBook 访问</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>优于一些特别原因，很多国外网站中国用户访问不了，或者访问非常慢，但这东西又是必须要用的，咋办？</p>
+<p>很难，这里有个方法，测试过是能用，但也不确定，还是需要多次验证，流程是这样的：</p>
+<p>针对 mac 用户：</p>
+<p>打开你的<code>访达</code> ，同时按<code>shift</code>+<code>command</code>+<code>G</code> , 输入：</p>
+<blockquote>
+<p>/private</p>
+</blockquote>
+<p>之后，按 <code>Enter</code>, 进入 Private 文件夹</p>
+<p><img src="https://cdn.ljk.cool/202201192311278.png" alt="private"></p>
+<p>文件夹长下面这个样子，在 <code>etc</code>这个文件这里，点击右键，有个<code>显示简介</code></p>
+<p><img src="https://cdn.ljk.cool/202201192313884.png" alt="显示简介"></p>
+<p>你要按照下图的顺序，先把小锁头🔒解锁🔓，然后给 everyone 这个用户「读和写」权限，解锁需要密码，然后再把这个锁头给锁上。</p>
+<p><img src="https://cdn.ljk.cool/202201192313977.png" alt="image-20220119231355944"></p>
+<p>这一步完成后，就双击进入到 <code>etc</code> 这个文件夹里，找到一个叫<code>hosts</code>的文件,也是右键点击显示简介，一样操作，也要给「读与写」权限，保存</p>
+<p><img src="https://cdn.ljk.cool/202201192315646.png" alt="image-20220119231554618"></p>
+<p>给了 hosts 文件读与写的权限之后，你把它打开，如果还是现实已锁定的话，你就点一下这个小箭头，把「锁定」这里给他解锁。</p>
+<p><img src="https://cdn.ljk.cool/202201192317980.png" alt="image-20220119231718953"></p>
+<p>然后就可以编辑了，把我下面列的内容复制到这个文件的最下面，点击保存（其实输入后直接关掉就是保存）</p>
+<blockquote>
+<p>140.82.114.4 github.com</p>
+<p>185.199.108.153 assets-cdn.github.com</p>
+<p>185.199.109.153 assets-cdn.github.com</p>
+<p>185.199.110.153 assets-cdn.github.com</p>
+<p>185.199.111.153 assets-cdn.github.com</p>
+<p>199.232.69.194 github.global.ssl.fastly.net</p>
+<p>75.2.70.75 gitbook.com</p>
+<p>99.83.190.102 gitbook.com</p>
+</blockquote>
+<p><img src="https://cdn.ljk.cool/202201192319813.png" alt="像这样"></p>
+<p>这些都操作完，你可以再用 Safari 浏览器尝试登陆下面的两个网站了：</p>
+<p><a target="_blank" rel="noopener" href="http://www.github.com/">www.github.com</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.gitbook.com/">www.gitbook.com</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ljk.cool/2022/01/19/%E5%8A%A0%E9%80%9F%E5%9B%BD%E5%86%85GitHub%E8%AE%BF%E9%97%AE/" data-id="ckylozpko0000ovy3ekf11poy" data-title="加速国内 GitHub/GitBook 访问" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-使用 git 把内容推到 GitHub 上" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/" class="article-date">
@@ -680,147 +750,6 @@
 
 
   
-    <article id="post-Markdown简易教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/10/Markdown%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/" class="article-date">
-  <time class="dt-published" datetime="2022-01-10T07:16:11.857Z" itemprop="datePublished">2022-01-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/10/Markdown%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/">Markdown 简易教程</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Markdown 是一个有效简化排版的工具，如果你的排版需求不是特别重，Markdown 是你的最佳选择，如果你对排版的要求极高，Markdown 可能无法满足你的需求。</p>
-<p>如果你想让你的文章有比较规整的排版，但又不想花哪怕一分钟在排版上，学 Markdown 吧，只需要做一点点标注，它就能帮你实现一个规整的排版。</p>
-<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p><a target="_blank" rel="noopener" href="https://markdown.lovejade.cn/">在线 Markdown 编辑器</a> : 把左边的文字删掉换成自己的文章内容就可以看到右边的实时编译内容.<strong>这也是非常好的自学工具</strong></p>
-<p>下图左边是<code>语法</code>，右边是语法所展现的<code>内容</code></p>
-<p><img src="https://cdn.ljk.cool/202201102105042.png" alt="自学工具"></p>
-<p><a target="_blank" rel="noopener" href="https://typora.io/">Typora</a> : 目前这个产品算是最好的客户端产品，费用是 88 块钱永久，可以给三个电脑激活，并且有 15 天免费试用，买它不亏。</p>
-<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/download">Vscode</a> : 这个工具既可以写 Markdown，也可以敲代码，还免费，也很好。</p>
-<p>手机端可以用锤子便签。</p>
-<p>其实记事本都可以写 Markdown，只是需要个工具来把文本编译好。</p>
-<p>目前主流的笔记软件比如有道笔记、印象笔记都是支持 Markdown 语句的。</p>
-<p><a target="_blank" rel="noopener" href="https://www.mweb.im/">Mweb</a> : 这个只在 mac 和 ios 系统上有，是我自己也在用的。</p>
-<p><a target="_blank" rel="noopener" href="https://ulysses.app/">Ulysses</a> : 号称是最好用的写作工具，要年付费，我买不起，所以没使用。</p>
-<h2 id="Markdown-基础用法"><a href="#Markdown-基础用法" class="headerlink" title="Markdown 基础用法"></a>Markdown 基础用法</h2><p>简单来说，Markdown 的语法主要是使用 “#”, “<em>”, “-”, “&gt;”, “`” 等小的字符作为指令，要注意的是：*<em>这些指令都要用英文状态下的“半角标点符号”，不能使用中文下的全角符号，部分语法需要加空格。</em></em></p>
-<p>所谓“指令”，当你在编辑器内输入<code># 我是谁</code>的时候，就相当于你告诉机器“我是谁”是你文章的标题。</p>
-<table>
-<thead>
-<tr>
-<th align="center">功能</th>
-<th align="center">语法</th>
-<th align="center">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">一级标题</td>
-<td align="center"># 内容</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">二级标题</td>
-<td align="center">## 内容</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">斜体</td>
-<td align="center">*内容*</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">加粗</td>
-<td align="center">*<em>内容</em>*</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">分割线</td>
-<td align="center">---</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">举例（无序1）</td>
-<td align="center">*</td>
-<td align="center">分级的话可以使用“tab键”缩进</td>
-</tr>
-<tr>
-<td align="center">举例（无序2）</td>
-<td align="center">-</td>
-<td align="center">分级的话可以使用“tab键”缩进</td>
-</tr>
-<tr>
-<td align="center">举例（有序）</td>
-<td align="center">1. 内容</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">引用</td>
-<td align="center">&gt; 内容</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">删除线</td>
-<td align="center">~~内容~~</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">插入链接</td>
-<td align="center">[内容](链接)</td>
-<td align="center">点击后可以跳转到对应链接</td>
-</tr>
-<tr>
-<td align="center">插入图片</td>
-<td align="center">![内容](链接)</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">插入符号</td>
-<td align="center">\符号</td>
-<td align="center">比如我真想输入“*”，可能会被转义，需要使用“\”来处理</td>
-</tr>
-<tr>
-<td align="center">代码</td>
-<td align="center">`内容`</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">代办事项</td>
-<td align="center">- [ ]</td>
-<td align="center">“]”后面有个空格</td>
-</tr>
-</tbody></table>
-<p>参考资料：</p>
-<p><a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-tutorial.html">Markdown 语法教程</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Fg411j7CW?from=search&seid=6147266190958223653&spm_id_from=333.337.0.0">Markdown视频教程</a></p>
-<p>注意：Markdown 语法还是比较多的，不需要都知道，只要知道基础语法就够了，需要用的时候就查，网络上有很多教程。</p>
-<p><a target="_blank" rel="noopener" href="https://donate.cafe/ljkjl">  <img style="width:150px" src="https://newbie.zeromesh.net/donate.7.6.svg" /></a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ljk.cool/2022/01/10/Markdown%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B/" data-id="cky8o5wg20000k8fy0yeh90l6" data-title="Markdown 简易教程" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -857,6 +786,10 @@
       <ul>
         
           <li>
+            <a href="/2022/01/19/%E5%8A%A0%E9%80%9F%E5%9B%BD%E5%86%85GitHub%E8%AE%BF%E9%97%AE/">加速国内 GitHub/GitBook 访问</a>
+          </li>
+        
+          <li>
             <a href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/">使用 git 把内容推到 GitHub 上</a>
           </li>
         
@@ -870,10 +803,6 @@
         
           <li>
             <a href="/2022/01/16/GitHub%20%E6%B3%A8%E5%86%8C/">GitHub 注册</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/15/Figma%20%E5%AD%A6%E4%B9%A0%201/">Figma 学习</a>
           </li>
         
       </ul>
