@@ -73,6 +73,35 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-asd md" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/22/asd%20md/" class="article-date">
+  <time class="dt-published" datetime="2022-01-22T15:20:22.992Z" itemprop="datePublished">2022-01-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>`</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ljk.cool/2022/01/22/asd%20md/" data-id="ckyrbv8150000xzy3b7xmelb1" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-无我" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/01/22/%E6%97%A0%E6%88%91/" class="article-date">
@@ -318,18 +347,16 @@
 </li>
 <li><p>打开文件，编辑内容，写如要忽略的文件，例如：<br>.idea # python中的一个隐藏文件，自动生成的，不需要提交<br>*.py[cod] #一些没有用的附带文件，直接忽略即可<br>按照上诉操作后，保存，那么这些文件就不会被提交了。</p>
 </li>
-<li><p>将文件夹下所有文件从工作区保存到暂存区 git add .命令<br>git add .</p>
+<li><p>将文件夹下所有文件从工作区保存到暂存区 git add .命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure></li>
+<li><p>把文件从暂存区提交到仓库区（本地的仓库） git-commit -m “此处写注释内容”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &#x27;注释内容&#x27;</span><br></pre></td></tr></table></figure></li>
+<li><p>关联远程仓库 （第一次使用需要添加远程仓库的地址）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@git仓库的地址  </span><br></pre></td></tr></table></figure></li>
+<li><p>将远程库与本地同步（如果远程仓库里面有文件等内容需要执行以下这一步）<br>git pull –rebase origin master</p>
 </li>
-<li><p>把文件从暂存区提交到仓库区（本地的仓库） git-commit -m “此处写注释内容”<br>git commit -m ‘注释内容’</p>
+<li><p>把本地内容推送到远程库 使用 git-push<br>git push -u origin master<br>按照上面的操作步骤就可以将本地文件推送到git远程仓库上了，并且可以自己设定不需要上传哪些文件。当然，情况因每人的配置环境或多或少出现问题，此教程只是解决众多问题中其中一个。</p>
 </li>
-<li><p>关联远程仓库 （第一次使用需要添加远程仓库的地址）<br>git remote add origin git@git仓库的地址<br>#注意，此处的地址将https://省略<br>注意，此处的地址将https://省略</p>
-</li>
-</ol>
-<p>或者</p>
-<p>git remote add origin 你git仓库的地址</p>
-<ol start="7">
-<li>将远程库与本地同步（如果远程仓库里面有文件等内容需要执行以下这一步）<br>git pull –rebase origin master</li>
-<li>把本地内容推送到远程库 使用 git-push<br>git push -u origin master<br>按照上面的操作步骤就可以将本地文件推送到git远程仓库上了，并且可以自己设定不需要上传哪些文件。当然，情况因每人的配置环境或多或少出现问题，此教程只是解决众多问题中其中一个。</li>
 </ol>
 
       
@@ -567,85 +594,6 @@
 
 
   
-    <article id="post-Gitbook绑定域名" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/14/Gitbook%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/" class="article-date">
-  <time class="dt-published" datetime="2022-01-14T06:23:23.158Z" itemprop="datePublished">2022-01-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/14/Gitbook%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/">GitBook 绑定域名</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>让你的书使用上属于你自己的域名，而不是 XXX.gitbook。io，可以使你的电子书更容易被触达，GitBook 能够方便地让你把自己的电子书和自己的域名进行绑定。</p>
-<p>无论你从阿里云还是腾讯云买来属于你自己的域名，都可以很方便地把它和 GitBook 进行绑定。</p>
-<p>绑定域名之前，首先你得把你的 GitBook 与谷歌或者 GitHub 进行绑定，其实也是一个注册网站的过程。</p>
-<p>这些网站都是国外网站，所以国内打开速度可能会比较慢一些，建议用系统自带的浏览器，Windows  用户就用 Edge 浏览器，mac 用户用 Safari，必要时可能用手机/平板注册会好一些。</p>
-<p>可以去看我的 GitHub 注册教程。</p>
-<p><img src="https://cdn.ljk.cool/202201162253452.png" alt="Verify"></p>
-<p>注册 GitHub 完成后，根据情况选择链接 谷歌账号或者 GitHub</p>
-<p><img src="https://cdn.ljk.cool/202201162253363.png" alt="GitHub/Google"></p>
-<p>后面就是按照流程登陆绑定了，这里就不再写指引。</p>
-<p>在GitBook 的 <code>Public</code>界面，点击下面的「Link an d domain settings」</p>
-<p><img src="https://cdn.ljk.cool/202201142132253.png" alt="link a domain"></p>
-<p>然后选择「Connect a domain」，意思是绑定个域名</p>
-<p><img src="https://cdn.ljk.cool/202201142141551.png" alt="绑定域名"></p>
-<p>点击之后，在下面这个框里输入你要绑定的域名，一般来说是这样的：</p>
-<blockquote>
-<p>举个例子：<br>比如你买的域名是 baidu.com<br>但其实你也同时拥有了所有 xxx.baidu.com 的域名。<br>所以你看，如果你不绑定自己的，GitBook 给你配置的是 你的 id.gitbook.io。<br>你要做的就是把上面提到的 「XXX」换成其它英语单词或者字母，啥都行，一般用小写单词，比如说：</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a></li>
-<li>books.baidu.com</li>
-<li>docs.baidu.com</li>
-<li>info.baidu.com</li>
-</ul>
-<p>不胜枚举。</p>
-</blockquote>
-<p>没错，最简单就是你输入 「www」，因为它是默认的，所以最好不用它，但用它也没任何问题。</p>
-<p>确认了自己的域名之后，填进去，比如我填的是<code>books.ljk.cool</code>，点击 <code>continue</code></p>
-<p><img src="https://cdn.ljk.cool/202201142143255.png" alt="输入"></p>
-<p><img src="https://cdn.ljk.cool/202201142149133.png" alt="提示配置 CNAME"></p>
-<p>现在你就需要去做一个事情了，就是在你域名里做一些配置，看下图，点击<code>解析</code>，这里其实是把你的电子书的网址与你的域名进行绑定</p>
-<p>腾讯的域名后台有点难找，可以<a target="_blank" rel="noopener" href="https://console.cloud.tencent.com/domain">点击链接</a>查看</p>
-<p><img src="https://cdn.ljk.cool/202201142139135.png" alt="域名解析"></p>
-<p>配置解析点击「添加记录」，有几处要填</p>
-<p><img src="https://cdn.ljk.cool/202201142150206.png" alt="添加记录"></p>
-<p>主机记录填 ：填写你自己定义的「XXX」内容，上面我说了，我写的是 books，所以我这里就填 books；</p>
-<p>记录类型填 CNAME；</p>
-<p>记录值把 hosting.gitbook.io 填进去，保存。这个值就出现在刚才截图里。</p>
-<p>这些填好并保存之后，你要回来点一下 「Retry」</p>
-<p><img src="https://cdn.ljk.cool/202201142153350.png" alt="retry"></p>
-<p>然后等会儿你点 <code>Continue</code> 就好了。</p>
-<p>等五分钟，你再浏览器上输入你自己定义的域名，看看有没有绑定成功吧。</p>
-<p><a target="_blank" rel="noopener" href="https://donate.cafe/ljkjl">  <img style="width:150px" src="https://newbie.zeromesh.net/donate.7.6.svg" /></a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ljk.cool/2022/01/14/Gitbook%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/" data-id="ckyegpi6w0000cwfy7jlf5xy8" data-title="GitBook 绑定域名" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -682,6 +630,10 @@
       <ul>
         
           <li>
+            <a href="/2022/01/22/asd%20md/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2022/01/22/%E6%97%A0%E6%88%91/">无我</a>
           </li>
         
@@ -695,10 +647,6 @@
         
           <li>
             <a href="/2022/01/19/%E5%8A%A0%E9%80%9F%E5%9B%BD%E5%86%85GitHub%E8%AE%BF%E9%97%AE/">加速国内 GitHub/GitBook 访问</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/">使用 git 把内容推到 GitHub 上</a>
           </li>
         
       </ul>

@@ -14,7 +14,7 @@
 <meta property="og:description" content="先在github或者码云上创建一个公开或私有项目：例如demo 在本地也就是要推送的项目目录中使用 git init 进行初始化，把其变成git可以管理的仓库  1git init   若要忽略本地的文件或文件夹不被提交到git远程仓库 ，则需要在项目根目录下创建 .gitignore 文件touch .gitignore  打开文件，编辑内容，写如要忽略的文件，例如：.idea # pytho">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-01-18T14:45:18.137Z">
-<meta property="article:modified_time" content="2022-01-18T14:47:23.506Z">
+<meta property="article:modified_time" content="2022-01-23T13:58:15.147Z">
 <meta property="article:author" content="ljk">
 <meta name="twitter:card" content="summary">
   
@@ -106,18 +106,16 @@
 </li>
 <li><p>打开文件，编辑内容，写如要忽略的文件，例如：<br>.idea # python中的一个隐藏文件，自动生成的，不需要提交<br>*.py[cod] #一些没有用的附带文件，直接忽略即可<br>按照上诉操作后，保存，那么这些文件就不会被提交了。</p>
 </li>
-<li><p>将文件夹下所有文件从工作区保存到暂存区 git add .命令<br>git add .</p>
+<li><p>将文件夹下所有文件从工作区保存到暂存区 git add .命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure></li>
+<li><p>把文件从暂存区提交到仓库区（本地的仓库） git-commit -m “此处写注释内容”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &#x27;注释内容&#x27;</span><br></pre></td></tr></table></figure></li>
+<li><p>关联远程仓库 （第一次使用需要添加远程仓库的地址）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@git仓库的地址  </span><br></pre></td></tr></table></figure></li>
+<li><p>将远程库与本地同步（如果远程仓库里面有文件等内容需要执行以下这一步）<br>git pull –rebase origin master</p>
 </li>
-<li><p>把文件从暂存区提交到仓库区（本地的仓库） git-commit -m “此处写注释内容”<br>git commit -m ‘注释内容’</p>
+<li><p>把本地内容推送到远程库 使用 git-push<br>git push -u origin master<br>按照上面的操作步骤就可以将本地文件推送到git远程仓库上了，并且可以自己设定不需要上传哪些文件。当然，情况因每人的配置环境或多或少出现问题，此教程只是解决众多问题中其中一个。</p>
 </li>
-<li><p>关联远程仓库 （第一次使用需要添加远程仓库的地址）<br>git remote add origin git@git仓库的地址<br>#注意，此处的地址将https://省略<br>注意，此处的地址将https://省略</p>
-</li>
-</ol>
-<p>或者</p>
-<p>git remote add origin 你git仓库的地址</p>
-<ol start="7">
-<li>将远程库与本地同步（如果远程仓库里面有文件等内容需要执行以下这一步）<br>git pull –rebase origin master</li>
-<li>把本地内容推送到远程库 使用 git-push<br>git push -u origin master<br>按照上面的操作步骤就可以将本地文件推送到git远程仓库上了，并且可以自己设定不需要上传哪些文件。当然，情况因每人的配置环境或多或少出现问题，此教程只是解决众多问题中其中一个。</li>
 </ol>
 
       
@@ -183,6 +181,10 @@
       <ul>
         
           <li>
+            <a href="/2022/01/22/asd%20md/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2022/01/22/%E6%97%A0%E6%88%91/">无我</a>
           </li>
         
@@ -196,10 +198,6 @@
         
           <li>
             <a href="/2022/01/19/%E5%8A%A0%E9%80%9F%E5%9B%BD%E5%86%85GitHub%E8%AE%BF%E9%97%AE/">加速国内 GitHub/GitBook 访问</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/">使用 git 把内容推到 GitHub 上</a>
           </li>
         
       </ul>
