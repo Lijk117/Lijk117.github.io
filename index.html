@@ -73,6 +73,86 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-购买服务器作为博客使用" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/25/%E8%B4%AD%E4%B9%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%9C%E4%B8%BA%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/" class="article-date">
+  <time class="dt-published" datetime="2022-01-25T12:58:32.624Z" itemprop="datePublished">2022-01-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/01/25/%E8%B4%AD%E4%B9%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%9C%E4%B8%BA%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/">购买服务器作为博客使用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>你需要一个云服务器来承担你的日常使用，成本大约 24 或者 32 块钱一个月，其实你买一个月也够了，只要你能够在一个月内完成你的博客搭建，就只需要三十来块钱就够了，当然，你可以一直续费，或者反复买云服务器。</p>
+<p>下面开始。</p>
+<h2 id="购买云服务器"><a href="#购买云服务器" class="headerlink" title="购买云服务器"></a>购买云服务器</h2><p>刚开始体验的时候，建议购买 “轻量应⽤服务器”，它相对来说⽐较便宜，海外的服务器只需要 24 /月 起，练习的时候可以使⽤，便宜。</p>
+<p>这里可以用腾讯云或者<a target="_blank" rel="noopener" href="https://partner.aliyun.com/shop/20690101?marketer=151">阿里云</a>买，二者各有千秋：</p>
+<ul>
+<li>功能上都是一致的，这不必多说；</li>
+<li>服务上腾讯云更友好，你可以随时申请退款，他会按剩余时间给你退款，非常良心，阿里云就不是，只有前五天可以退款；</li>
+<li>价格上阿里云有优势，腾讯云的服务器是 32 块钱起了（海外的便宜），阿里云的云服务器是 24 块钱起。</li>
+</ul>
+<p>你可以对比一下，我自己用的是腾讯云，也用腾讯云举例，但是先列举一下阿里云的配置购买截图：</p>
+<p><img src="https://cdn.ljk.cool/202201252114047.png" alt="阿里云"></p>
+<p>以及腾讯云，我后面的教程是用的腾讯云，这里要注意：</p>
+<p><img src="https://cdn.ljk.cool/202201252115686.png" alt="腾讯云"></p>
+<p>总的来说有这么几个信息要注意：</p>
+<p>购买的是「轻量应用服务器」，服务器地区必须选海外地区，香港也行。</p>
+<p>「镜像」选择「系统镜像」然后用这个红色的 Ubuntu，多少版本都行，有数字大的就选大的。</p>
+<p>套餐选最低配的，等你觉得最低配不够用的时候再提，不急。</p>
+<p>续费就一个月一个月慢慢续。</p>
+<p>购买成功后进入控制台</p>
+<p><img src="https://cdn.ljk.cool/202201252121367.png" alt="购买成功"></p>
+<p>像下面这样，点登陆，这个页面也可以进去点登陆</p>
+<p><img src="https://cdn.ljk.cool/202201252122486.png" alt="登陆"></p>
+<p><img src="https://cdn.ljk.cool/202201252124766.png" alt="内部的登陆按钮"></p>
+<p>登陆之后要开始执行命令了，分别执行下面两句命令，就是分别复制进去，复制一次按一下 <code>Enter</code>键：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo -i</span><br><span class="line">source &lt;(curl -sL https://multi.netlify.app/v2ray.sh) --zh</span><br></pre></td></tr></table></figure>
+
+<p>这个安装完之后，会给你一段信息，你要复制下来，像下面这样：</p>
+<p><img src="https://cdn.ljk.cool/202201252124191.png" alt="信息"></p>
+<p>然后输⼊  <code>v2ray</code> 后，按 <code>Enter</code></p>
+<p><img src="https://cdn.ljk.cool/202201252127561.png" alt="选项"></p>
+<p>先选 3，然后选 5，然后选 3 websocket，不需要伪装所以直接回⻋。如果你刚才那段⽂字复制了，那你就不需要查看配置了，不然的话你要查看⼀下配置，也就是输⼊</p>
+<p>4</p>
+<p>到此这个远程登录就结束了，可以关掉了。</p>
+<p>接下来就是配置防⽕墙，原则就是（⼏乎）全删，只留下放通 ping</p>
+<p><img src="https://cdn.ljk.cool/202201252127410.png" alt="防火墙"></p>
+<p>删完之后再添加规则，添加规则需要找到你刚复制的那段⾥⾯的 “Port”对应的数值，⽐如我这个是</p>
+<p>31876那我就填个 318</p>
+<p><img src="https://cdn.ljk.cool/202201252126295.png" alt="31876"></p>
+<p>这样就配置完成了，然后你需要个专属的工具就把 Vmess 这段信息复制过去就行了。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/yanue/V2rayU/releases">https://github.com/yanue/V2rayU/releases</a></p>
+<p>从这里下载。</p>
+<p><a target="_blank" rel="noopener" href="https://donate.cafe/ljkjl">  <img style="width:150px" src="https://newbie.zeromesh.net/donate.7.6.svg" /></a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ljk.cool/2022/01/25/%E8%B4%AD%E4%B9%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%9C%E4%B8%BA%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/" data-id="ckyu67d930000uxy3d3fa609x" data-title="购买服务器作为博客使用" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-无我" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/01/22/%E6%97%A0%E6%88%91/" class="article-date">
@@ -565,85 +645,6 @@
 
 
   
-    <article id="post-Gitbook绑定域名" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/14/Gitbook%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/" class="article-date">
-  <time class="dt-published" datetime="2022-01-14T06:23:23.158Z" itemprop="datePublished">2022-01-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/14/Gitbook%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/">GitBook 绑定域名</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>让你的书使用上属于你自己的域名，而不是 XXX.gitbook。io，可以使你的电子书更容易被触达，GitBook 能够方便地让你把自己的电子书和自己的域名进行绑定。</p>
-<p>无论你从阿里云还是腾讯云买来属于你自己的域名，都可以很方便地把它和 GitBook 进行绑定。</p>
-<p>绑定域名之前，首先你得把你的 GitBook 与谷歌或者 GitHub 进行绑定，其实也是一个注册网站的过程。</p>
-<p>这些网站都是国外网站，所以国内打开速度可能会比较慢一些，建议用系统自带的浏览器，Windows  用户就用 Edge 浏览器，mac 用户用 Safari，必要时可能用手机/平板注册会好一些。</p>
-<p>可以去看我的 GitHub 注册教程。</p>
-<p><img src="https://cdn.ljk.cool/202201162253452.png" alt="Verify"></p>
-<p>注册 GitHub 完成后，根据情况选择链接 谷歌账号或者 GitHub</p>
-<p><img src="https://cdn.ljk.cool/202201162253363.png" alt="GitHub/Google"></p>
-<p>后面就是按照流程登陆绑定了，这里就不再写指引。</p>
-<p>在GitBook 的 <code>Public</code>界面，点击下面的「Link an d domain settings」</p>
-<p><img src="https://cdn.ljk.cool/202201142132253.png" alt="link a domain"></p>
-<p>然后选择「Connect a domain」，意思是绑定个域名</p>
-<p><img src="https://cdn.ljk.cool/202201142141551.png" alt="绑定域名"></p>
-<p>点击之后，在下面这个框里输入你要绑定的域名，一般来说是这样的：</p>
-<blockquote>
-<p>举个例子：<br>比如你买的域名是 baidu.com<br>但其实你也同时拥有了所有 xxx.baidu.com 的域名。<br>所以你看，如果你不绑定自己的，GitBook 给你配置的是 你的 id.gitbook.io。<br>你要做的就是把上面提到的 「XXX」换成其它英语单词或者字母，啥都行，一般用小写单词，比如说：</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a></li>
-<li>books.baidu.com</li>
-<li>docs.baidu.com</li>
-<li>info.baidu.com</li>
-</ul>
-<p>不胜枚举。</p>
-</blockquote>
-<p>没错，最简单就是你输入 「www」，因为它是默认的，所以最好不用它，但用它也没任何问题。</p>
-<p>确认了自己的域名之后，填进去，比如我填的是<code>books.ljk.cool</code>，点击 <code>continue</code></p>
-<p><img src="https://cdn.ljk.cool/202201142143255.png" alt="输入"></p>
-<p><img src="https://cdn.ljk.cool/202201142149133.png" alt="提示配置 CNAME"></p>
-<p>现在你就需要去做一个事情了，就是在你域名里做一些配置，看下图，点击<code>解析</code>，这里其实是把你的电子书的网址与你的域名进行绑定</p>
-<p>腾讯的域名后台有点难找，可以<a target="_blank" rel="noopener" href="https://console.cloud.tencent.com/domain">点击链接</a>查看</p>
-<p><img src="https://cdn.ljk.cool/202201142139135.png" alt="域名解析"></p>
-<p>配置解析点击「添加记录」，有几处要填</p>
-<p><img src="https://cdn.ljk.cool/202201142150206.png" alt="添加记录"></p>
-<p>主机记录填 ：填写你自己定义的「XXX」内容，上面我说了，我写的是 books，所以我这里就填 books；</p>
-<p>记录类型填 CNAME；</p>
-<p>记录值把 hosting.gitbook.io 填进去，保存。这个值就出现在刚才截图里。</p>
-<p>这些填好并保存之后，你要回来点一下 「Retry」</p>
-<p><img src="https://cdn.ljk.cool/202201142153350.png" alt="retry"></p>
-<p>然后等会儿你点 <code>Continue</code> 就好了。</p>
-<p>等五分钟，你再浏览器上输入你自己定义的域名，看看有没有绑定成功吧。</p>
-<p><a target="_blank" rel="noopener" href="https://donate.cafe/ljkjl">  <img style="width:150px" src="https://newbie.zeromesh.net/donate.7.6.svg" /></a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://ljk.cool/2022/01/14/Gitbook%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/" data-id="ckyegpi6w0000cwfy7jlf5xy8" data-title="GitBook 绑定域名" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -680,6 +681,10 @@
       <ul>
         
           <li>
+            <a href="/2022/01/25/%E8%B4%AD%E4%B9%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%9C%E4%B8%BA%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/">购买服务器作为博客使用</a>
+          </li>
+        
+          <li>
             <a href="/2022/01/22/%E6%97%A0%E6%88%91/">无我</a>
           </li>
         
@@ -693,10 +698,6 @@
         
           <li>
             <a href="/2022/01/19/%E5%8A%A0%E9%80%9F%E5%9B%BD%E5%86%85GitHub%E8%AE%BF%E9%97%AE/">加速国内 GitHub/GitBook 访问</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/">使用 git 把内容推到 GitHub 上</a>
           </li>
         
       </ul>
