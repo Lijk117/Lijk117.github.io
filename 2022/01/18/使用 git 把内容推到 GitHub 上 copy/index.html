@@ -6,21 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://ljk.cool">
-  <title>简洁的废话</title>
+  <title>使用 git 把内容推到 GitHub 上 | 简洁的废话</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="git 配置 github ssh1、设置Git的user name和email：(如果是第一次的话)    $ git config –global user.name “ljk”    $ git config –global user.email”&amp;#x31;&amp;#51;&amp;#x32;&amp;#x30;&amp;#x37;&amp;#53;&amp;#52;&amp;#48;&amp;#48;&amp;#48;&amp;#55;&amp;#x40;&amp;#x31;&amp;#">
+  <meta name="description" content="先在github或者码云上创建一个公开或私有项目：例如demo 在本地也就是要推送的项目目录中使用 git init 进行初始化，把其变成git可以管理的仓库  1git init   若要忽略本地的文件或文件夹不被提交到git远程仓库 ，则需要在项目根目录下创建 .gitignore 文件touch .gitignore  打开文件，编辑内容，写如要忽略的文件，例如：.idea # pytho">
 <meta property="og:type" content="article">
-<meta property="og:title" content="简洁的废话">
-<meta property="og:url" content="http://ljk.cool/2022/01/01/git%20%E9%85%8D%E7%BD%AE%20github%20ssh/index.html">
+<meta property="og:title" content="使用 git 把内容推到 GitHub 上">
+<meta property="og:url" content="http://ljk.cool/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A%20copy/index.html">
 <meta property="og:site_name" content="简洁的废话">
-<meta property="og:description" content="git 配置 github ssh1、设置Git的user name和email：(如果是第一次的话)    $ git config –global user.name “ljk”    $ git config –global user.email”&amp;#x31;&amp;#51;&amp;#x32;&amp;#x30;&amp;#x37;&amp;#53;&amp;#52;&amp;#48;&amp;#48;&amp;#48;&amp;#55;&amp;#x40;&amp;#x31;&amp;#">
+<meta property="og:description" content="先在github或者码云上创建一个公开或私有项目：例如demo 在本地也就是要推送的项目目录中使用 git init 进行初始化，把其变成git可以管理的仓库  1git init   若要忽略本地的文件或文件夹不被提交到git远程仓库 ，则需要在项目根目录下创建 .gitignore 文件touch .gitignore  打开文件，编辑内容，写如要忽略的文件，例如：.idea # pytho">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://newbie.zeromesh.net/donate.7.6.svg">
-<meta property="article:published_time" content="2021-12-31T17:04:01.038Z">
-<meta property="article:modified_time" content="2022-01-21T14:27:26.691Z">
+<meta property="article:published_time" content="2022-01-18T14:45:18.137Z">
+<meta property="article:modified_time" content="2022-03-01T09:48:41.949Z">
 <meta property="article:author" content="ljk">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://newbie.zeromesh.net/donate.7.6.svg">
   
     <link rel="alternative" href="/atom.xml" title="简洁的废话" type="application/atom+xml">
   
@@ -150,44 +148,48 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-git 配置 github ssh" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-使用 git 把内容推到 GitHub 上 copy" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      使用 git 把内容推到 GitHub 上
+    </h1>
+  
+
+        
+        <a href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A%20copy/" class="archive-article-date">
+  	<time datetime="2022-01-18T14:45:18.137Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-18</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="git-配置-github-ssh"><a href="#git-配置-github-ssh" class="headerlink" title="git 配置 github ssh"></a>git 配置 github ssh</h2><p>1、设置Git的user name和email：(如果是第一次的话)<br>    $ git config –global user.name “ljk”<br>    $ git config –global user.email”<a href="mailto:&#x31;&#51;&#x32;&#x30;&#x37;&#53;&#52;&#48;&#48;&#48;&#55;&#x40;&#x31;&#50;&#54;&#46;&#99;&#111;&#x6d;">&#x31;&#51;&#x32;&#x30;&#x37;&#53;&#52;&#48;&#48;&#48;&#55;&#x40;&#x31;&#50;&#54;&#46;&#99;&#111;&#x6d;</a>“<br>2、生成密钥<br>    $ ssh-keygen -t rsa -C “<a href="mailto:&#49;&#x33;&#x32;&#48;&#x37;&#53;&#52;&#48;&#x30;&#x30;&#x37;&#64;&#49;&#x32;&#x36;&#46;&#x63;&#111;&#109;">&#49;&#x33;&#x32;&#48;&#x37;&#53;&#52;&#48;&#x30;&#x30;&#x37;&#64;&#49;&#x32;&#x36;&#46;&#x63;&#111;&#109;</a>“<br>连续3个回车。如果不需要密码的话。<br>最后得到了两个文件：id_rsa和id_rsa.pub。</p>
-<p>图片描述</p>
-<p>如果不是第一次，就选择overwrite.<br>图片描述</p>
-<p>3、添加密钥到ssh-agent<br>确保 ssh-agent 是可用的。ssh-agent是一种控制用来保存公钥身份验证所使用的私钥的程序，其实ssh-agent就是一个密钥管理器，运行ssh-agent以后，使用ssh-add将私钥交给ssh-agent保管，其他程序需要身份验证的时候可以将验证申请交给ssh-agent来完成整个认证过程。</p>
-<pre><code># start the ssh-agent in the background
-eval &quot;$(ssh-agent -s)&quot;
-Agent pid 59566
-</code></pre>
-<p>添加生成的 SSH key 到 ssh-agent。</p>
-<pre><code>$ ssh-add ~/.ssh/id_rsa
-</code></pre>
-<p>4、登陆Github, 添加 ssh 。<br>把id_rsa.pub文件里的内容复制到这里</p>
-<p>5、测试：<br>    $ ssh -T <a href="mailto:&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;">&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;</a><br>你将会看到：</p>
-<pre><code>The authenticity of host &#39;github.com (207.97.227.239)&#39; can&#39;t be established.
-RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
-Are you sure you want to continue connecting (yes/no)?
-</code></pre>
-<p>选择 yes</p>
-<pre><code>Hi  ! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
-</code></pre>
-<p>如果看到Hi后面是你的用户名，就说明成功了。<br>图片描述</p>
-<p>6、修改.git文件夹下config中的url。<br>修改前</p>
-<pre><code>[remote &quot;origin&quot;]
-url = https://github.com/humingx/humingx.github.io.git
-fetch = +refs/heads/*:refs/remotes/origin/*
-</code></pre>
-<p>修改后</p>
-<pre><code>[remote &quot;origin&quot;]
-url = git@github.com:humingx/humingx.github.io.git
-fetch = +refs/heads/*:refs/remotes/origin/*
-</code></pre>
-<p>7、发布</p>
-<p><a target="_blank" rel="noopener" href="https://donate.cafe/ljkjl">  <img style="width:150px" src="https://newbie.zeromesh.net/donate.7.6.svg" /></a></p>
+        <ol>
+<li>先在github或者码云上创建一个公开或私有项目：例如demo</li>
+<li>在本地也就是要推送的项目目录中使用 git init 进行初始化，把其变成git可以管理的仓库</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>若要忽略本地的文件或文件夹不被提交到git远程仓库 ，则需要在项目根目录下创建 .gitignore 文件<br>touch .gitignore</p>
+</li>
+<li><p>打开文件，编辑内容，写如要忽略的文件，例如：<br>.idea # python中的一个隐藏文件，自动生成的，不需要提交<br>*.py[cod] #一些没有用的附带文件，直接忽略即可<br>按照上诉操作后，保存，那么这些文件就不会被提交了。</p>
+</li>
+<li><p>将文件夹下所有文件从工作区保存到暂存区 git add .命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure></li>
+<li><p>把文件从暂存区提交到仓库区（本地的仓库） git-commit -m “此处写注释内容”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &#x27;注释内容&#x27;</span><br></pre></td></tr></table></figure></li>
+<li><p>关联远程仓库 （第一次使用需要添加远程仓库的地址）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@git仓库的地址  </span><br></pre></td></tr></table></figure></li>
+<li><p>将远程库与本地同步（如果远程仓库里面有文件等内容需要执行以下这一步）<br>git pull –rebase origin master</p>
+</li>
+<li><p>把本地内容推送到远程库 使用 git-push<br>git push -u origin master<br>按照上面的操作步骤就可以将本地文件推送到git远程仓库上了，并且可以自己设定不需要上传哪些文件。当然，情况因每人的配置环境或多或少出现问题，此教程只是解决众多问题中其中一个。</p>
+</li>
+</ol>
 
       
 
@@ -240,15 +242,20 @@ fetch = +refs/heads/*:refs/remotes/origin/*
   
 <nav id="article-nav">
   
-    <a href="/2022/01/01/%E2%80%9C%E7%A7%AF%E5%BE%AE%E2%80%9D%E2%80%94%E2%80%942022%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          “积微”——2022 年度计划
+          使用 git 把内容推到 GitHub 上
         
       </div>
     </a>
   
+  
+    <a href="/2022/01/17/Mac%20%E7%8E%AF%E5%A2%83%E4%B8%8B%20Gitbook%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mac 环境下 GitBook 安装教程</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 

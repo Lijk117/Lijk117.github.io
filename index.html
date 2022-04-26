@@ -878,6 +878,90 @@
 
 
   
+    <article id="post-使用 git 把内容推到 GitHub 上 copy" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A%20copy/">使用 git 把内容推到 GitHub 上</a>
+    </h1>
+  
+
+        
+        <a href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A%20copy/" class="archive-article-date">
+  	<time datetime="2022-01-18T14:45:18.137Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>先在github或者码云上创建一个公开或私有项目：例如demo</li>
+<li>在本地也就是要推送的项目目录中使用 git init 进行初始化，把其变成git可以管理的仓库</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>若要忽略本地的文件或文件夹不被提交到git远程仓库 ，则需要在项目根目录下创建 .gitignore 文件<br>touch .gitignore</p>
+</li>
+<li><p>打开文件，编辑内容，写如要忽略的文件，例如：<br>.idea # python中的一个隐藏文件，自动生成的，不需要提交<br>*.py[cod] #一些没有用的附带文件，直接忽略即可<br>按照上诉操作后，保存，那么这些文件就不会被提交了。</p>
+</li>
+<li><p>将文件夹下所有文件从工作区保存到暂存区 git add .命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure></li>
+<li><p>把文件从暂存区提交到仓库区（本地的仓库） git-commit -m “此处写注释内容”</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &#x27;注释内容&#x27;</span><br></pre></td></tr></table></figure></li>
+<li><p>关联远程仓库 （第一次使用需要添加远程仓库的地址）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@git仓库的地址  </span><br></pre></td></tr></table></figure></li>
+<li><p>将远程库与本地同步（如果远程仓库里面有文件等内容需要执行以下这一步）<br>git pull –rebase origin master</p>
+</li>
+<li><p>把本地内容推送到远程库 使用 git-push<br>git push -u origin master<br>按照上面的操作步骤就可以将本地文件推送到git远程仓库上了，并且可以自己设定不需要上传哪些文件。当然，情况因每人的配置环境或多或少出现问题，此教程只是解决众多问题中其中一个。</p>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/01/18/%E4%BD%BF%E7%94%A8%20git%20%E6%8A%8A%E5%86%85%E5%AE%B9%E6%8E%A8%E5%88%B0%20GitHub%20%E4%B8%8A%20copy/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Mac 环境下 Gitbook 安装教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -927,86 +1011,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2022/01/17/Mac%20%E7%8E%AF%E5%A2%83%E4%B8%8B%20Gitbook%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-关于网络问题的事先说明" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/01/17/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E7%9A%84%E4%BA%8B%E5%85%88%E8%AF%B4%E6%98%8E/">关于网络问题的事先说明</a>
-    </h1>
-  
-
-        
-        <a href="/2022/01/17/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E7%9A%84%E4%BA%8B%E5%85%88%E8%AF%B4%E6%98%8E/" class="archive-article-date">
-  	<time datetime="2022-01-17T15:01:03.158Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在写文档教程过程中，犯了一个严重的问题：</p>
-<blockquote>
-<p>我默认了所有人的网络环境都跟我一样，都能打开。</p>
-</blockquote>
-<p>因此，我忽略了倒不是 Github、GitBook 不能在国内使用，而是网络问题导致访问很慢很慢，需要等很久很久。</p>
-<p>我自己在使用被限制的网络（即不开国外代理）的时候，真是好慢，慢到我非常绝望，我内心有很多方案：</p>
-<ul>
-<li>代注册？</li>
-<li>教翻墙？</li>
-<li>看看有没有替代的方案？</li>
-<li>···</li>
-</ul>
-<p>我还是克制住了。首先我不能教翻墙，这东西自己用查资料没问题，提供服务是会被警告的，甚至可能罚款，这风险我不能担；</p>
-<p>代注册确实最简单，但我能帮几个人注册？</p>
-<p>替代方案我会继续找，目前找到一个方案，要 1999 一年，算了吧，继续找。</p>
-<p>所以还是要自己想办法，也不是不能用，只是非常非常慢而已，忍一忍，多花些时间，等等吧，注册绑定这些东西弄完，也就好了。</p>
-<p>我想，这也是个小门槛，所有事情都不是一帆风顺的，你需要一点一点克服困难，最终达到一个好的结果。有没有耐心，愿不愿意花时间，这就是你的课题了，当然这也跟你要完成它的决心有多强。</p>
-<p>如果你需要帮助，或者需要有人听听你吐槽，可以找我，我不能要求你做任何，我能做的只是在你遇到困难找到我的时候，为你提供必要的帮助，然后，完善我的文档。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/01/17/%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98%E7%9A%84%E4%BA%8B%E5%85%88%E8%AF%B4%E6%98%8E/">展开全文 >></a>
         </p>
       
 
